@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilim Academy — Zamonaviy ta'lim markazi</title>
+  <meta name="description" content="Bilim Academy — dasturlash, dizayn, ingliz tili va boshqa zamonaviy yo'nalishlar bo'yicha professional kurslar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ======= HEADER / NAVBAR ======= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__icon">🎓</span>
+        <span class="logo__text">Bilim<em>Academy</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#courses" class="nav__link" data-i18n="nav_courses">Kurslar</a>
+        <a href="#about" class="nav__link" data-i18n="nav_about">Biz haqimizda</a>
+        <a href="#teachers" class="nav__link" data-i18n="nav_teachers">Ustozlar</a>
+        <a href="#pricing" class="nav__link" data-i18n="nav_pricing">Narxlar</a>
+        <a href="#faq" class="nav__link" data-i18n="nav_faq">Savollar</a>
+        <a href="#contact" class="nav__link" data-i18n="nav_contact">Aloqa</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" id="lang">
+          <button class="lang__btn is-active" data-lang="uz">UZ</button>
+          <button class="lang__btn" data-lang="ru">RU</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#contact" class="btn btn--primary header__cta" data-i18n="nav_cta">Bepul sinov darsi</a>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge" data-i18n="hero_badge">🔥 2026 yilning eng zo'r ta'lim markazi</span>
+          <h1 class="hero__title" data-i18n="hero_title">Kelajagingizni bugundan boshlang</h1>
+          <p class="hero__subtitle" data-i18n="hero_subtitle">Dasturlash, dizayn, sun'iy intellekt va chet tillari bo'yicha professional kurslar. Tajribali ustozlar, amaliy loyihalar va ishga joylashish kafolati.</p>
+
+          <div class="hero__buttons">
+            <a href="#courses" class="btn btn--primary btn--lg" data-i18n="hero_btn1">Kurslarni ko'rish</a>
+            <a href="#about" class="btn btn--ghost btn--lg">
+              <span class="play">▶</span> <span data-i18n="hero_btn2">Video tanishuv</span>
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__num" data-count="12500">0</span>
+              <span class="stat__label" data-i18n="stat_students">O'quvchi</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="48">0</span>
+              <span class="stat__label" data-i18n="stat_courses">Kurslar</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="120">0</span>
+              <span class="stat__label" data-i18n="stat_teachers">Ustozlar</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="94">0</span>
+              <span class="stat__label" data-i18n="stat_employment">% ishga joylashish</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero-card hero-card--main">
+            <div class="hero-card__emoji">👩‍💻</div>
+            <div class="hero-card__body">
+              <strong data-i18n="hero_card_title">Frontend Development</strong>
+              <span data-i18n="hero_card_text">6 oylik intensiv kurs</span>
+            </div>
+            <div class="hero-card__progress"><i style="width:78%"></i></div>
+          </div>
+          <div class="hero-card hero-card--float1">
+            <span class="dot dot--green"></span> <span data-i18n="hero_float1">Sertifikat beriladi</span>
+          </div>
+          <div class="hero-card hero-card--float2">
+            <span class="hero-card__emoji sm">🎯</span>
+            <span data-i18n="hero_float2">Ishga joylashish</span>
+          </div>
+          <div class="hero-card hero-card--float3">
+            <span class="stars">★★★★★</span>
+            <span>4.9 / 5.0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= BRANDS / PARTNERS ======= -->
+    <section class="brands">
+      <div class="container">
+        <p class="brands__title" data-i18n="brands_title">Bizning hamkorlarimiz va ish beruvchilarimiz</p>
+        <div class="brands__row">
+          <span>Google</span><span>Microsoft</span><span>Epam</span><span>Ubisoft</span>
+          <span>Bank Avia</span><span>Uzum</span><span>Yandex</span><span>Meta</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FEATURES ======= -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow" data-i18n="features_eyebrow">Nima uchun biz?</span>
+          <h2 class="section__title" data-i18n="features_title">Biz bilan o'rganish afzalliklari</h2>
+          <p class="section__desc" data-i18n="features_desc">Biz har bir o'quvchiga individual yondashuv, amaliyotga yo'naltirilgan ta'lim va zamonaviy metodikalarni taklif etamiz.</p>
+        </div>
+        <div class="features__grid">
+          <article class="feature">
+            <div class="feature__icon">🧑‍🏫</div>
+            <h3 data-i18n="feat1_title">Tajribali ustozlar</h3>
+            <p data-i18n="feat1_text">Sohadagi yillar tajribaga ega, faoliyatdagi mutaxassislar sizga bilim beradi.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🛠️</div>
+            <h3 data-i18n="feat2_title">Amaliy loyihalar</h3>
+            <p data-i18n="feat2_text">Har bir kurs davomida real loyihalar ustida ishlaysiz va portfoliyo yig'asiz.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🕐</div>
+            <h3 data-i18n="feat3_title">Moslashuvchan jadval</h3>
+            <p data-i18n="feat3_text">Kunduzgi, kechki va onlayn guruhlar — o'zingizga qulay vaqtni tanlang.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">📜</div>
+            <h3 data-i18n="feat4_title">Xalqaro sertifikat</h3>
+            <p data-i18n="feat4_text">Kursni tugatganingizda tan olinadigan sertifikat bilan ta'qimlanasiz.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">💼</div>
+            <h3 data-i18n="feat5_title">Ishga joylashish</h3>
+            <p data-i18n="feat5_text">Resume, intervyu va hamkor kompaniyalar orqali ish topishda yordam beramiz.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">♾️</div>
+            <h3 data-i18n="feat6_title">Umrbod qo'llab-quvvatlash</h3>
+            <p data-i18n="feat6_text">Kurs tugagach ham savollaringiz bo'yicha doimiy yordam olasiz.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   
