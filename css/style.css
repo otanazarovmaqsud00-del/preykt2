@@ -490,3 +490,67 @@ h1, h2, h3, h4 {
 .teacher h3 { font-size: 1.1rem; margin-bottom: 4px; }
 .teacher > span { display: block; color: var(--primary); font-size: 0.85rem; font-weight: 600; margin-bottom: 10px; }
 .teacher p { color: var(--muted); font-size: 0.9rem; }
+
+/* ---------- Testimonials ---------- */
+.testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.quote {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 30px 26px;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s;
+}
+.quote:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.quote__stars { color: var(--accent); letter-spacing: 3px; margin-bottom: 14px; }
+.quote blockquote { font-size: 1rem; color: var(--ink-2); margin-bottom: 20px; }
+.quote figcaption { display: flex; align-items: center; gap: 12px; }
+.quote__avatar {
+  width: 46px; height: 46px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--bg, #ede9fe);
+  font-size: 1.3rem;
+}
+.quote figcaption b { display: block; font-size: 0.98rem; }
+.quote figcaption span:not(.quote__avatar) { font-size: 0.82rem; color: var(--muted); }
+
+/* ---------- Pricing ---------- */
+.pricing__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; align-items: start; }
+.plan {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 34px 28px;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s;
+}
+.plan:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.plan--featured {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.04);
+}
+.plan--featured:hover { transform: scale(1.04) translateY(-6px); }
+.plan__badge {
+  position: absolute;
+  top: -14px; left: 50%; transform: translateX(-50%);
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, var(--accent), var(--pink));
+  color: #fff; font-size: 0.76rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.plan h3 { font-size: 1.25rem; margin-bottom: 12px; }
+.plan__price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 22px; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+.plan__price b { font-family: "Manrope"; font-size: 2.1rem; color: var(--primary-dark); }
+.plan__price span { color: var(--muted); font-size: 0.9rem; }
+.plan ul { display: grid; gap: 13px; margin-bottom: 26px; }
+.plan li { position: relative; padding-left: 30px; font-size: 0.96rem; }
+.plan li::before {
+  content: "✓";
+  position: absolute; left: 0;
+  color: var(--green); font-weight: 800;
+}
+.plan li.off { color: #cbd5e1; }
+.plan li.off::before { content: "✕"; color: #cbd5e1; }
